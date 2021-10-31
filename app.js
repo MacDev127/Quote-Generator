@@ -20,7 +20,7 @@ function generateQuote() {
     fetch('https://api.quotable.io/random', config)
         .then((response) => response.json())
         .then((data) => {
-            quote.innerHTML = `"${data.content}"`;
+            quote.innerHTML = data.content;
             author.innerHTML = data.author;
         })
 

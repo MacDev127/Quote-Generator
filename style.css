@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-body h1 {
+.title {
     color: #AEF3E7;
     font-size: 60px;
     font-weight: 600;
@@ -68,4 +68,17 @@ h3 {
 #author {
     font-size: 18px;
     color: #000000;
+}
+
+@media screen and (max-width: 375px) {
+    .title {
+        font-size: 30px;
+    }
+    #quote {
+        font-size: 26px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        margin: 50px auto;
+        max-width: 600px;
+    }
 }
